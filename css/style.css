@@ -13,21 +13,6 @@
     --container-width-md: 90%;
     --container-width-sm: 94%;
 }
-/* Styles for dark/light mode button */
-/* Styles for dark mode icon */
-#dark-mode-li {
-    padding-left: 10px; /* Adjust spacing as needed */
-}
-
-#dark-mode-icon {
-    color: #f1f1f1; /* Adjust color as needed */
-    font-size: 20px; /* Adjust size as needed */
-}
-/* Add your dark mode styles here */
-body.dark-mode {
-    background-color: #222;
-    color: #fff;
-}
 
 
 
