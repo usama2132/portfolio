@@ -41,11 +41,11 @@
 }
 
 ::-webkit-scrollbar-thumb {
-    background: var(--black);
+    background: var(--primary);
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: var(--danger);
+    background: var(--primary);
 }
 
 body {
