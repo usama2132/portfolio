@@ -61,41 +61,7 @@ closeBtn.addEventListener('click', closeNav);
 window.addEventListener('scroll', () => {
     document.querySelector('nav').classList.toggle('window-scroll', window.scrollY>100);
 })
-document.addEventListener("DOMContentLoaded", function() {
-    const darkModeIcon = document.getElementById("dark-mode-icon");
-    const body = document.body;
-    let isDarkMode = localStorage.getItem("darkMode") === "true";
 
-    // Function to toggle dark mode
-    function toggleDarkMode() {
-        isDarkMode = !isDarkMode; // Update the dark mode state
-
-        if (isDarkMode) {
-            // Apply full dark mode styles directly
-            body.style.backgroundColor = "#000";
-            body.style.color = "#fff";
-        } else {
-            // Apply full white mode styles directly
-            body.style.backgroundColor = "#fff";
-            body.style.color = "#000";
-        }
-
-        localStorage.setItem("darkMode", isDarkMode); // Store the updated state
-    }
-
-    // Set initial dark mode state
-    if (isDarkMode) {
-        toggleDarkMode(); // Initially set dark mode if it was previously enabled
-    }
-
-    // Dark mode toggle event
-    darkModeIcon.addEventListener("click", toggleDarkMode);
-
-    // Prevent default behavior of the dark mode icon to avoid any potential issues
-    darkModeIcon.addEventListener("mousemove", function(event) {
-        event.preventDefault();
-    });
-});
 
 
 
